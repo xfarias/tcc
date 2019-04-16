@@ -1,0 +1,125 @@
+Estrutura do artigo SBRC 2016 (14 páginas)
+
+Título, Abstract, Resumo (1/2 página)
+Seção 1 : Introdução (1 página)
+
+		- Contextualização da IoT (Conceito, Disseminação de conteúdo, aplicações que interagem e beneficiam as pessoas)
+
+		- Problema (Disseminação de conteúdo vulnerável a atacantes (Artigo sbseg2015), Ataque Sybil numa disseminação, técnicas que detectam este ataque não atendem as características da IoT)
+		
+		- Trabalhos relacionados (Trabalhos que detectam o ataque Sybil: Caract. das Redes, Criptografia, Relacionamento entre vizinhos próximos)
+
+		- Objetivos do trabalho (Mecanismo de controle de associações para IoT, visão geral, objetivo)
+
+		- Descrição das seções do trabalho
+
+Seção 2 : Trabalhos Relacionados (1 página)
+		
+		- Como as abordagens encontradas na literatura detectam o ataque Sybil (Classificação das abordagens)
+
+		- Abordagem baseada nas características em comuns das redes (Visão geral, RSS e área de cob.(abbas) + pp e pn, RSS (raghu) + pp e pn para o contexto da IoT)
+
+		- Abordagem baseada em criptografia (Visão geral, chaves simétricas (Lin) + pp e pn, chaves assimétricas (Das) + pp e pn)
+
+		- Abordagem baseada no relacionamento entre vizinhos (Visão geral, (Mobid) pp e pn)
+
+		 ______ 
+		* pp => pontos positivos; pn => pontos negativos;
+
+Seção 3: Mecanismo de controle de associações para IoT (5 Pág)
+	
+	Visão Geral da seção
+			
+	Modelo da Rede 
+
+		- Introdução (Entidades, Funções das entidades, Relacionamento entre elas)
+		- Modelo de Disseminação (Asserção 1: O modo de disseminação não impõe restrições na capacidade de  detecção do mecanismo)
+                - Representação da disseminação através de uma figura (contextualizando da rede, o fluxo, e um tipo de serviço)  
+	
+	Modelo do Ataque 
+
+		- Visão geral do ataque ( O que é, como funciona, objetivos e formas)
+		- Manipulação de identidade (Roubada e fabricada, Asserção 2: O modo como os atacantes obtém as identidades não tem impacto no mecanismo)
+	        - Comportamento na associação à rede (churn e conluio)
+                - Representação do ataque Sybil com ID roubada e fabricada com os seus respectivos comportamentos 
+		
+
+       Mecanismo de controle de associações (Nome do mecanismo)
+		- Visão geral ( O que estou propondo, o que ele faz, objetivo, características, composição)
+
+		- Fase 1: Inicialização/Configuração da rede
+
+			E1- Estabelecimento do canal seguro (ECC)
+			E2- Comprovação da identidade (PUF)
+			E3- Garantia da identidade (Recibo)
+			E4- Sincronização dos recibos
+
+		- Fase 2: Gerência da disseminação
+
+			E5- Controle de Associações 
+				- Internas 
+				- Externas
+			E6- Identificação do Ataque
+			E7- Desassociação
+
+		- Funcionamento do Mecanismo (Mostrar o funcionamento de cada fase do mecanismo até a identificação de um ataque na rede IoT)
+		
+
+Seção 4 : Avaliação (5 páginas)
+
+	- Visão geral da avaliação
+		- Mecanismo avaliado 
+		- Cenário (Smart Home e eHealth)
+		- Parâmetros
+            — Fixos: 802.15.4, modelo de mobilidade, tempo de simulação 
+            — Variáveis: área do ambiente, quantidade de nós no ambiente, tipo de identidade e o modo do comportamento do atacante
+		- Métricas (taxa de detecção, acurácia, falsos positivos, falso negativos, eficiência energética e 
+           retransmissões adicionais(sobrecarga/overhead)
+      	- Resultados
+		
+
+Seção 5 : Conclusão e Referências ( 1 pág e 1/2 )
+	
+	
+=======	=======	=======	=======	=======	=======	=======
+
+
+Cenários da IoT
+
+ Casa Inteligente (Smart Home)
+	Artigo base: Sensing as a service model for smart cities supported by Internet of Things (2013)
+	  
+	Autores:   Charith Perera, Arkady Zaslavsky, Peter Christen and Dimitrios Georgakopoulos
+	  
+	Universidade: Research School of Computer Science, The Australian National University, Canberra, ACT 0200, Australia
+
+	Descrição: O cenário doméstico compreende objetos e dispositivos computacionais que coletam informações e as disseminam para um gateway/ap/roteador de borda que irá encaminhar estas informações para aplicações da internet. Estas aplicações interagem com as pessoas de modo a proverem serviços em tempo real a partir das informações sensoriadas/coletadas. Neste cenário, por exemplo, uma pessoa pode acompanhar em tempo real a temperatura de um cômodo através da coleta de informações temporais deste ambiente realizada por sensores.
+
+	Objetos: Eletrodomésticos 
+
+			- Geladeira, Fogão, Microondas, TV
+
+		 Dispositivos computacionais
+			- Sensores, tablets, celulares
+
+	Fluxo: Periódico 
+	Mobilidade: velocidades dos nós variando entre 0.2 m/s à 2 m/s
+			
+ eHealth
+
+	Artigo base: Virtual Groups for Patient WBAN Monitoring in Medical Environments
+	
+	 Autores: Stepan Ivanov, Christopher Foley, Sasitharan Balasubramaniam, Member, IEEE, and Dmitri Botvich, Member, IEEE
+	
+	Descrição: O cenário da saúde corresponde a um hospital onde os médicos e enfermeiras monitoram as funções vitais obtidas a partir dos sensores corporais de um paciente. Estes sensores coletam e disseminam as informações para os monitores de atividades e PDA’s dos médicos. Caso um paciente tenha alguma alteração nos seus dados vitais o(s) o médico responsável recebe um alerta, podendo assim tomar uma decisão mais precisa.
+
+	Objetos: Sensores dispostos no corpo de uma pessoa, PDA (Médico,enfermeira), Monitores de funções vitais, sensores ambientes
+	Fluxo: Periódico 
+	Mobilidade: 0.2 m/s à 2 m/s
+
+
+
+
+
+
+		
